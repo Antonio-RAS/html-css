@@ -19,6 +19,13 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
@@ -34,6 +41,7 @@
     <!-- 
         ANATOMIA PARA TABELAS GRANDES
         TABLE  
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -42,10 +50,11 @@
                 TR, TD, TH
      -->
     <table>
+        <caption> Populacao das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Populacao</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">Populacao</th>
             </tr>
         </thead>
         <tbody>
@@ -61,10 +70,35 @@
                 <td>Rio de Janeiro</td>
                 <td class="num">17 264 943</td>
             </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 850 513</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num">11 824 665</td>
+            </tr>
+            <tr>
+                <td>Rio GRande do Sul</td>
+                <td class="num">11 229 915</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 539 029</td>
+            </tr>
+            <tr>
+                <td>Ceara</td>
+                <td class="num">9 233 656</td>
+            </tr>
+            <tr>
+                <td>Para</td>
+                <td class="num">8 664 306</td>
+            </tr>
+            
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>000000</strong></td>
             </tr>
         </tfoot>
